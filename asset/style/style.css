@@ -48,16 +48,19 @@ nav{
 
 #search{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
 .header:nth-child(1){   
     grid-area: a;
+    margin: 25px;
 }
 
 .header:nth-child(2){
     grid-area: b;
+    margin: 25px;
 }
 
 .header:nth-child(3){
@@ -67,12 +70,48 @@ nav{
     color: #106ffc;
     font-weight: bolder;
 }
+#recherche i{
+    padding: 2px 5px 5.25px 5px;
+    border: 1px solid #ccc;
+    border-radius: 25% 0 0 25%;
+    background-color: #ccc;
+}
+#recherche input{
+    height: 25px;
+    border: 1px solid #ccc;
+}
+#recherche .btn{
+    border: 1px solid #106ffc;
+    background-color: #106ffc;
+    border-radius: 0 15% 15% 0;
+}
+/* *************************filtre*********************** */
+.filtres{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-left: 1.5%;
+}
+.filtres ul{
 
+}
+.filtres ul li{
+    display: block;
+    float: left;
+    padding: 0 15px 0 15px;
+}
+.filtres ul li a{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 25px 25px 25px 25px;
+}
+.filtres ul li a i{
+    border: 1px solid #106ffc;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: #106ffc;
+}
 .filtre{
     color: black;
     font-weight: bold;
 }
-
-body {
-
-} 

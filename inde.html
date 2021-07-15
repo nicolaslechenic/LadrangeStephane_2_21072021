@@ -10,14 +10,18 @@
 </head>
 <body>
     <header>
-        <div class="header" >
+        <div class="header">
             <img id="logo" src="asset/images/logo/Reservia@3x.png" alt="logo"/>
         </div>
-        <div class="header" id="search">
-            <h2>Trouvez votre hébergement pour les vacances de rêve</h2>
-            <p>En plain centre ville ou en pleine nature</p>
-            <label for="recherche"><i class="fas fa-map-marker-alt"></i></label><input type="text" name="recherche">
-            <input type="submit" value="Rechercher"/>
+        <div class="header">
+            <div id="search">
+                <h2>Trouvez votre hébergement pour les vacances de rêve</h2>
+                <p>En plain centre ville ou en pleine nature</p>
+                <div id="recherche">
+                    <label for="recherche"><i class="fas fa-map-marker-alt"></i></label><input type="text" name="recherche">
+                    <input class="btn" type="submit" value="Rechercher"/>
+                </div>
+            </div>
         </div>
         <nav class="header">
             <p><a class="nav" href="#">Hébergement</a></p>
@@ -25,7 +29,7 @@
             <p><a class="nav" href="#">S'inscrire</a></p>            
         </nav>
     </header>
-    <div class="filtre">
+    <div class="filtres">
         <ul>
             <li class="filtre" >Filtre</li>
             <li><a class="filtre" href="#"><i class="fas fa-money-bill-wave"></i>économique</a></li>
