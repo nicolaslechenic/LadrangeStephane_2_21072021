@@ -5,33 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reservia</title>
-    <link rel="stylsheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/asset/style/style.css"/>
 </head>
 <body>
     <header>
-        <div>
-            <img src="asset/images/logo/Reservia@3x.png" alt="logo"/>
-            <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
+        <div class="header" >
+            <img id="logo" src="asset/images/logo/Reservia@3x.png" alt="logo"/>
+        </div>
+        <div class="header" id="search">
+            <h2>Trouvez votre hébergement pour les vacances de rêve</h2>
             <p>En plain centre ville ou en pleine nature</p>
             <label for="recherche"><i class="fas fa-map-marker-alt"></i></label><input type="text" name="recherche">
             <input type="submit" value="Rechercher"/>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Hébergement</a></li>
-                <li><a href="#">Activité</a></li>
-                <li><a href="#">S'inscrire</a></li>
-            </ul>
+        <nav class="header">
+            <p><a class="nav" href="#">Hébergement</a></p>
+            <p><a class="nav" href="#">Activité</a></p>
+            <p><a class="nav" href="#">S'inscrire</a></p>            
         </nav>
     </header>
     <div class="filtre">
         <ul>
-            <li></li>
-            <li><a href="#"><i class="fas fa-money-bill-wave"></i>économique</a></li>
-            <li><a href="#"><i class="fas fa-child"></i>familia</a></li>
-            <li><a href="#"><i class="fas fa-heart"></i>romantique</a></li>
-            <li><a href="#"><i class="fas fa-dog"></i>animaux autorisé</a></li>
+            <li class="filtre" >Filtre</li>
+            <li><a class="filtre" href="#"><i class="fas fa-money-bill-wave"></i>économique</a></li>
+            <li><a class="filtre" href="#"><i class="fas fa-child"></i>familia</a></li>
+            <li><a class="filtre" href="#"><i class="fas fa-heart"></i>romantique</a></li>
+            <li><a class="filtre" href="#"><i class="fas fa-dog"></i>animaux autorisé</a></li>
         </ul>
         <p><i class="fas fa-info"></i>Plus de 500 logement sont disponible dans cette ville</p>
     </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div>
                     <h3>Hôtel les mouettes</h3>
-                    <p>Nuit à partir de 75€</p>
+                    <p>Nuit à partir de 76€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                 </div>
                 <div>
@@ -70,7 +70,7 @@
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
                 </div>                
             </div>
-            <p>Afficher plus</p>
+            <h3>Afficher plus</h3>
         </div>
         <div class="populaire">
             <div>
