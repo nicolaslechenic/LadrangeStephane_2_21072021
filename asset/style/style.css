@@ -115,3 +115,80 @@ nav{
     color: black;
     font-weight: bold;
 }
+/* ********************hebergement*************************************** */
+.section-1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 70% 30%;
+    border: 1px solid red;
+    grid-template-areas: 
+        "hebergement populaire";
+    grid-gap: 25px;
+}
+.hebergement{
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    background-color: rgba(231, 231, 231, 0.829);
+}
+.offres{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,200px);
+    grid-gap: 20px;
+    
+}
+.offre{
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: white;
+}
+.offre img{
+    width: 300px;
+    height: 135px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.offre ul li {
+    display: block;
+    float: left;
+    padding: 0;    
+}
+.fasstar{
+    color: #106ffc;
+}
+.farstar i{
+    color:#ccc;
+}
+/* ************************populaire******************************************** */
+.populaire{
+    display: flex;
+    flex-direction: column;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    background-color: rgba(231, 231, 231, 0.829);
+}
+.liste{
+    display: grid;
+    grid-template-rows: repeat(3,200px);
+}
+.populair{
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: white;
+    height: 180px;
+    width: 520px;
+}
+.populair img{
+    float: left;
+    width: 300px;
+    height: 180px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+.populair ul li {
+    display: block;
+    float: left;
+    padding: 0;    
+}
