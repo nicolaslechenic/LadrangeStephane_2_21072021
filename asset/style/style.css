@@ -208,3 +208,56 @@ nav{
 .detail ul{
     padding: 0 10px 0 10px;
 }
+/* *****************section 2******************************** */
+.section-2{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: 
+        'port fort parc ville'
+        'port ile parc park' ;
+    grid-gap: 5px;
+}
+.section-2 :nth-child(1){
+    grid-area: port;
+}
+.section-2 :nth-child(2){
+    grid-area: fort;
+}
+.section-2 :nth-child(3){
+    grid-area: ile;
+}
+.section-2 :nth-child(4){
+    grid-area: parc;
+}
+.section-2 :nth-child(5){
+    grid-area: ville;
+}
+.section-2 :nth-child(6){
+    grid-area: park;
+}
+.section-2 .big img{
+    object-fit: cover;
+    height: 570px;
+    width: 300px;
+    padding: 8px;
+    border:0 solid;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.267);
+}
+.section-2 .small img{
+    object-fit: cover;
+    height: 270px;
+    width: 300px;
+    padding: 5px;
+    border:0 solid;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 5px 0px 10px rgba(128, 128, 128, 0.267);
+}
+.section-2 h3{
+    border: 0 solid;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 0px 10px rgba(128, 128, 128, 0.267);
+    margin-top: -6px;
+    padding: 5px;
+}
