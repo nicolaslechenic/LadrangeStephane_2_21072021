@@ -261,3 +261,10 @@ nav{
     margin-top: -6px;
     padding: 5px;
 }
+/* *******************footer*********************** */
+footer{
+    width: 80%;
+    padding: 50px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
