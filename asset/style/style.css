@@ -71,9 +71,6 @@ nav{
     margin: 25px;
 }
 .header:nth-child(3){
-    grid-area: d;    
-}
-.header:nth-child(4){
     grid-area: c;    
 }
 .nav{
@@ -173,7 +170,7 @@ nav{
 
 .offres{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,30%);
     grid-template-rows: repeat(2,1fr);
     grid-gap: 31px;
     padding: 28px 40px 44px 40px;
@@ -184,7 +181,7 @@ nav{
     background-color: white;
 }
 .offre img{
-    width: 340px;
+    width: 100%;
     height: 150px;
     padding: 5px;
     object-fit: cover;
@@ -215,7 +212,8 @@ nav{
 }
 .liste{
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,20%);
     grid-gap: 33px;
     padding: 0 40px 0 40px;
 }
@@ -223,16 +221,16 @@ nav{
     border: 1px white solid;
     border-radius: 20px;
     background-color: white;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 .titre{
     padding: 20px 40px 20px 40px;
 }
 .populair img{
     float: left;
-    width: 300px;
-    height: 140px;
+    width: 50%;
+    height: 100%;
     padding: 5px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
@@ -243,18 +241,19 @@ nav{
     padding: 0;    
 }
 .detail{
-    display: grid;
-    grid-template-rows: 60px 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap column;
+    align-items: flex-start;
 }
 .detail h3{
-    font-size: large;
-    padding: 10px 0 0px 10px;
+    padding: 5px 0px 10px 5px;
 }
 .detail p{
-    padding: 0 0 0 10px;
+    padding: 0;
 }
 .detail ul{
-    padding: 0 10px 0 10px;
+    padding: 0;
 }
 /* *****************section 2******************************** */
 #activité_marseille{
@@ -358,17 +357,12 @@ footer{
             "b b";
     }
     .sub{
-        display: none;
-    }
-    .loop{
-        display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px;
     }
     .mobil_on{
         display: block;
-    }
-    .sinscrire{
-        display: block;
-        grid-area: d;
     }
     nav{
         display: flex;
