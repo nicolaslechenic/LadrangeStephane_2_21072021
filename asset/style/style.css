@@ -343,7 +343,190 @@ footer{
 }
 
 /* ************************responsive tablette******************************* */
-
+@media screen and (max-width: 768px){
+    body{
+        padding: 0;
+    }
+    /************************header********************************* */
+    header{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            "a c"
+            "b b";
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ****************************filtre**************************** */
+    .filtres{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 0 0 5px;
+    }
+    .filtres ul{
+        
+    }
+    #filtre{
+        padding: 16px 16px 16px 0;
+    }
+    .filtre:hover{
+        background-color: #deebff85;
+    }
+    .filtre:hover i{
+        background-color: #0065FC;
+        color: #DEEBFF;
+    }
+    .filtres ul li{
+        display: block;
+        float: left;
+    }
+    .filtres ul li a{
+        border: 1px solid #f2f2f2;
+        padding: 16px 10px 16px 0;
+        margin-left: 15px;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .filtres ul li a i{
+        border: 1px solid #DEEBFF;
+        border-radius: 100%;
+        margin-right: 5px;
+        padding: 16px;
+        background-color: #DEEBFF;
+        color: #0065FC;
+    }
+    .filtre{
+        color: black;
+        font-weight: bold;
+    }
+    .filtres p i{
+        border: 1px solid #DEEBFF;
+        padding: 5px 10px 5px 10px;
+        border-radius: 25px;
+        color: #0065FC;
+        margin-right: 12px;
+    }
+    /* ****************************populaire******************************* */
+    .populaire{
+        grid-area: populaire;
+        display: flex;
+        flex-flow: row wrap;
+        border: 1px #f2f2f2 solid;
+        border-radius: 20px;
+        background-color: #f2f2f2;
+    }
+    .liste{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: 60%;
+        grid-gap: 20px;
+        padding: 0 40px 0 40px;
+    }
+    .populair{
+        border: 1px white solid;
+        border-radius: 20px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+    .titre{
+        width: 100%;
+        padding: 20px 40px 20px 40px;
+    }
+    .populair img{  
+        float: none;
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    .populair ul li {
+        display: block;
+        float: left;
+        padding: 0;    
+    }
+    .detail{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: wrap column;
+        align-items: flex-start;
+    }
+    /* ***********************hebergement********************************** */
+    .section-1{
+        display: grid;
+        grid-template-rows: 35% 52%;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "populaire"  
+        "hebergement";
+        grid-gap: 40px;
+        padding: 40px 0 65px 0;
+    }
+    .hebergement{
+        grid-area: hebergement;
+        border: 1px #f2f2f2 solid;
+        border-radius: 20px;
+        background-color: #f2f2f2;
+        width: 100%;
+    }
+    .hebergement h2{
+        padding: 10px 0 0 40px;
+    }
+    #afficher_plus{
+        padding: 5px 0 5px 40px;
+    }
+    
+    .offres{
+        display: grid;
+        grid-template-columns: repeat(3,31%);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+    .offre{
+        border: 1px white solid;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .offre img{
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    .description{
+        padding: 0px 0 20px 12px;
+    }
+    .offre ul li {
+        display: block;
+        float: left;
+        padding: 0;    
+    }
+    /* *********************section-2******************** */
+    .section-2{
+        display: grid;
+        grid-template-rows: repeat(3,30%);
+        grid-template-columns: repeat(2,45%);
+        grid-template-areas: 
+            "port fort"
+            "ile parc"
+            "ville park";
+    }
+    .mobile{
+        padding: 0px 22px 0px 20px;
+    }
+    .section-2 .mobile img{
+        object-fit: cover;
+        height: 190px;
+        width: 334px;
+        
+    }
+}
 
 /* ************************responsive mobile****************************************** */
 @media screen and (max-width: 375px){
@@ -372,7 +555,7 @@ footer{
         display: flex;
         justify-content: space-around;
     }
-    /* ******************************************** regarder pour regler probleme pour changer value voir type pour bouton ************************************************** */
+    /* ********************************************  ************************************************** */
     .recherche{
         display: flex;
         padding: 20px 0 20px 0;
@@ -406,8 +589,9 @@ footer{
     }
     /************** filtre*********** */
     #filtre{
-        padding: 10px 10px 10px 0;
+        padding: 10px 10px 10px 24px;
         float: inline-start;
+        width: 100%;
     }
     .filtre{
         display: flex;
