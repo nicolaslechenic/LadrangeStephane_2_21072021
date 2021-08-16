@@ -95,9 +95,7 @@ nav{
     padding: 18px 20px 19px 20px;
     margin-left: -5px;
 }
-.btn i{
-    display: none;
-}
+
 
 /* *************************filtre*********************** */
 .filtres{
@@ -245,13 +243,22 @@ nav{
     padding: 0;    
 }
 .detail{
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     flex-flow: wrap column;
     align-items: flex-start;
+    overflow: hidden;
 }
 .detail h3{
     padding: 5px 0px 10px 5px;
+    /* font-size: 1.2em;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 2.4em;
+    line-height: 1.2em; */
 }
 .detail p{
     padding: 0;
@@ -265,8 +272,8 @@ nav{
 }
 .section-2{
     display: grid;
-    grid-template-columns: repeat(4,405px);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,23%);
+    grid-template-rows: repeat(2,35%);
     grid-template-areas: 
         'port fort parc ville'
         'port ile parc park' ;
@@ -299,15 +306,15 @@ nav{
 .section-2 .big img{
     object-fit: cover;
     height: 100%;
-    width: 405px;
+    width: 100%;
     border:0 solid;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.267);
 }
 .section-2 .small img{
     object-fit: cover;
-    height: 270px;
-    width: 405px;
+    height: 100%;
+    width: 100%;
     /* padding: 5px; */
     border:0 solid;
     border-radius: 20px 20px 20px 20px;
@@ -332,8 +339,9 @@ footer{
     margin: 50px 0 0 0;
     padding: 20px 0 50px 50px;
     display: grid;
-    grid-template-columns: repeat(3,450px);
+    grid-template-columns: repeat(3,20%);
     background-color: #f2f2f2;
+    grid-gap: 50px;
 }
 .footer h3{
     padding: 0 0 10px 0;
@@ -454,6 +462,15 @@ footer{
         justify-content: flex-start;
         flex-flow: wrap column;
         align-items: flex-start;
+        
+    }
+    .detail h3{
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2.4em;
+        line-height: 1.2em;
     }
     /* ***********************hebergement********************************** */
     .section-1{
@@ -537,12 +554,16 @@ footer{
         bottom: 0;
         padding: 10px;
     }
+    .tab{
+        position: relative;
+    }
     /* *********************footer*************************** */
     footer{
         display: grid;
         grid-template-rows: 100;
-        grid-template-columns: repeat(3,40%);
+        grid-template-columns: repeat(3,20%);
         padding: 50px 20px 0 20px;
+        grid-gap: 50px;
     }
     .footer h3{
         padding: 0 0 10px 0;
@@ -553,7 +574,7 @@ footer{
 }
 
 /* ************************responsive mobile****************************************** */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 390px){
     body{
         padding: 0;
     }
@@ -605,8 +626,10 @@ footer{
         /* width: 10px; */
         margin-left: -5px;
     }
-    .btn i{
-        display: block;
+    .btn::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f002";
     }
     .btn span{
         display: none;
