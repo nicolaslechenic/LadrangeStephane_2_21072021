@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @font-face {
-    font-family: "Raleway-black";
-    src: url(../font/Raleway-Black.ttf);
     font-family: "Raleway-extralight";
-    src: url(../font/Raleway-ExtraLight.ttf);
+    src: url(/asset/font/Raleway-ExtraLight.ttf);
 }
 
 *{
@@ -13,14 +12,14 @@
 }
 body{
     width: auto;
-    padding: 50px 50px 0 50px;
+    padding: 0 50px 0 50px;
 
 }
 h2,h3{
-    font-family: Raleway-black;
+    font-family: "Raleway",sans-serif;
 }
 p{
-    font-family: Raleway-extralight;
+    font-family: "Raleway-extralight",sans-serif;
 }
 
 a,a:visited{    
@@ -32,8 +31,8 @@ section a{
 /* ********************************************** */
 
 .logo{
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
 }
 
 header{
@@ -77,9 +76,15 @@ nav{
     color: #0065FC;
     font-weight: bolder;
 }
+.nav:hover{
+    border-top: 4px solid #0065FC;
+}
+nav a{
+    padding-top: 80px;
+}
 .recherche .localisation{
     padding: 18px 20px 22px 20px;
-    border: 1px solid #f2f2f2;
+    
     border-radius: 25% 0 0 25%;
     background-color: #f2f2f2;
 }
@@ -89,13 +94,15 @@ nav{
     border: 1px solid #f2f2f2;
 }
 .recherche .btn{
-    border: 1px solid #0065FC;
+    
     background-color: #0065FC;
     border-radius: 0 15% 15% 0;
     padding: 18px 20px 19px 20px;
     margin-left: -5px;
 }
-
+.btn{
+    color:white ;
+}
 
 /* *************************filtre*********************** */
 .filtres{
@@ -128,7 +135,7 @@ nav{
     border-radius: 25px 25px 25px 25px;
 }
 .filtres ul li a i{
-    border: 1px solid #DEEBFF;
+    
     border-radius: 100%;
     margin-right: 5px;
     padding: 16px;
@@ -159,7 +166,7 @@ nav{
 }
 .hebergement{
     grid-area: hebergement;
-    border: 1px #f2f2f2 solid;
+    
     border-radius: 20px;
     background-color: #f2f2f2;
     position: relative;
@@ -181,7 +188,7 @@ nav{
     padding: 28px 40px 44px 40px;
 }
 .offre{
-    border: 1px white solid;
+    
     border-radius: 20px;
     background-color: white;
 }
@@ -219,7 +226,7 @@ nav{
     grid-area: populaire;
     display: flex;
     flex-direction: column;
-    border: 1px #f2f2f2 solid;
+    
     border-radius: 20px;
     background-color: #f2f2f2;
 }
@@ -231,7 +238,7 @@ nav{
     padding: 0 40px 0 40px;
 }
 .populair{
-    border: 1px white solid;
+    
     border-radius: 20px;
     background-color: white;
     height: 100%;
@@ -239,6 +246,8 @@ nav{
 }
 .titre{
     padding: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .populair img{
     float: left;
@@ -389,6 +398,12 @@ footer{
     .btn span{
         display: none;
     }
+    nav a{
+        padding-top: 0px;
+    }
+    .nav:hover{
+        border: hidden;
+    }
     /* ****************************filtre**************************** */
     .filtres{
         display: flex;
@@ -419,7 +434,7 @@ footer{
         border-radius: 25px 25px 25px 25px;
     }
     .filtres ul li a i{
-        border: 1px solid #DEEBFF;
+        
         border-radius: 100%;
         margin-right: 5px;
         padding: 16px;
@@ -442,7 +457,7 @@ footer{
         grid-area: populaire;
         display: flex;
         flex-flow: row wrap;
-        border: 1px #f2f2f2 solid;
+        
         border-radius: 20px;
         background-color: #f2f2f2;
     }
@@ -454,7 +469,7 @@ footer{
         padding: 0 40px 0 40px;
     }
     .populair{
-        border: 1px white solid;
+        
         border-radius: 20px;
         background-color: white;
         height: 100%;
@@ -507,7 +522,7 @@ footer{
     }
     .hebergement{
         grid-area: hebergement;
-        border: 1px #f2f2f2 solid;
+        
         border-radius: 20px;
         background-color: #f2f2f2;
         width: 100%;
@@ -527,7 +542,7 @@ footer{
         padding: 5px 20px 5px 20px;
     }
     .offre{
-        border: 1px white solid;
+        
         border-radius: 20px;
         background-color: white;
     }
@@ -582,7 +597,7 @@ footer{
     /* *********************footer*************************** */
     footer{
         display: grid;
-        grid-template-rows: 100;
+        grid-template-rows: 100%;
         grid-template-columns: repeat(3,20%);
         padding: 50px 20px 0 20px;
         grid-gap: 50px;
@@ -629,7 +644,7 @@ footer{
     }
     .recherche .localisation{
         padding: 8px 10px 6px 10px;
-        border: 1px solid #f2f2f2;
+        
         border-radius: 25% 0 0 25%;
         background-color: #f2f2f2;
     }
@@ -640,7 +655,7 @@ footer{
         border: 1px solid #f2f2f2;
     }
     .recherche .btn{
-        border: 1px solid #0065FC;
+        
         background-color: #0065FC;
         border-radius: 25%;
         padding: 8px 10px 4px 10px;
@@ -676,7 +691,7 @@ footer{
         border-radius: 25px 25px 25px 25px;
     }
     .filtres ul li a i{
-        border: 1px solid #DEEBFF;
+        
         border-radius: 100%;
         margin-right: 5px;
         padding: 10px;
