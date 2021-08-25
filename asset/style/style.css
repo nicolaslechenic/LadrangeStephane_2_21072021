@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @font-face {
     font-family: "Raleway-extralight";
     src: url(/asset/font/Raleway-ExtraLight.ttf);
@@ -19,7 +20,8 @@ h2,h3{
     font-family: "Raleway",sans-serif;
 }
 p{
-    font-family: "Raleway-extralight",sans-serif;
+    font-family: "Raleway","Raleway-extralight",sans-serif;
+    font-weight: 200;
 }
 a{
     font-family: "Raleway",sans-serif;
@@ -111,7 +113,6 @@ nav a{
     display: flex;
     justify-content: start;
     flex-direction: column;
-    /* padding-left: 1.5%; */
 }
 .filtres ul{
     
@@ -267,26 +268,19 @@ nav a{
 .detail{
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-flow: wrap column;
     align-items: flex-start;
     overflow: hidden;
 }
 .detail h3{
     padding: 5px 0px 10px 5px;
-    /* font-size: 1.2em;
-    display: block;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-height: 2.4em;
-    line-height: 1.2em; */
 }
 .detail p{
-    padding: 0;
+    padding: 0 0 0 5px;
 }
 .detail ul{
-    padding: 0;
+    padding: 0 0 0 5px;
 }
 /* *****************section 2******************************** */
 #activité_marseille{
@@ -294,8 +288,7 @@ nav a{
 }
 .section-2{
     display: grid;
-    grid-template-columns: repeat(4,23%);
-    grid-template-rows: repeat(2,35%);
+    grid-template-rows: repeat(2,40%);
     grid-template-areas: 
         'port fort parc ville'
         'port ile parc park' ;
@@ -337,7 +330,6 @@ nav a{
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* padding: 5px; */
     border:0 solid;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 0px 10px rgba(128, 128, 128, 0.267);
@@ -365,13 +357,12 @@ footer{
     background-color: #f2f2f2;
     grid-gap: 50px;
 }
-.footer h3{
+footer h3{
     padding: 0 0 10px 0;
 }
-.footer li{
+footer li{
     padding: 10px 0 0 0;
 }
-
 /* ************************responsive tablette******************************* */
 @media screen and (max-width: 768px){
     body{
@@ -503,14 +494,6 @@ footer{
         overflow: hidden;
 
     }
-    /* .detail h3{
-        display: block;
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-        overflow: hidden;
-        max-height: 2.4em;
-        line-height: 1.2em;
-    } */
     /* ***********************hebergement********************************** */
     .section-1{
         display: grid;
@@ -588,7 +571,6 @@ footer{
         border-radius: 0 0 20px 20px;
         box-shadow: -5px 5px 10px rgba(128, 128, 128, 0.267);
         background-color: white;
-        /* float: inline-end; */
         position: absolute;
         bottom: 0;
         padding: 10px;
@@ -661,7 +643,6 @@ footer{
         background-color: #0065FC;
         border-radius: 25%;
         padding: 8px 10px 4px 10px;
-        /* width: 10px; */
         margin-left: -5px;
     }
     
@@ -684,7 +665,6 @@ footer{
     }
     .filtres ul li{
         display: block;
-        /* float: left; */
     }
     .filtres ul li a{
         border: 1px solid #f2f2f2;
