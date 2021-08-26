@@ -377,6 +377,11 @@ footer li{
             "a c"
             "b b";
     }
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin: 15px 20px;
+    }
     .search{
         display: flex;
         justify-content: center;
