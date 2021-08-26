@@ -66,12 +66,12 @@ nav{
 }
 .header:nth-child(1){   
     grid-area: a;
-    margin: 25px;
+    margin: 25px 0;
 }
 
 .header:nth-child(2){
     grid-area: b;
-    margin: 25px;
+    margin: 25px 0;
 }
 .header:nth-child(3){
     grid-area: c;    
