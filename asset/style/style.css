@@ -4,6 +4,10 @@
     font-family: "Raleway-extralight";
     src: url(/asset/font/Raleway-ExtraLight.ttf);
 }
+@font-face {
+    font-family: "Raleway-regular";
+    src: url(/asset/font/Raleway-Regular.ttf);
+}
 
 *{
     margin: 0;
@@ -17,14 +21,14 @@ body{
 
 }
 h2,h3{
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway","Raleway-regular",sans-serif;
 }
 p{
     font-family: "Raleway","Raleway-extralight",sans-serif;
     font-weight: 200;
 }
 a{
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway","Raleway-regular",sans-serif;
 }
 a,a:visited{    
     text-decoration: none;
