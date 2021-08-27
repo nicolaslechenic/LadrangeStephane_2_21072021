@@ -41,12 +41,13 @@ section a{
 .logo{
     width: 120px;
     height: 60px;
+    margin: 25px 0px;
 }
 
 header{
     display: grid;
     grid-template-columns: 1fr 550px;
-    grid-template-rows: 100px 150px;
+    grid-template-rows: 100px 200px;
     grid-template-areas: 
         "a c"
         "b b";
@@ -65,30 +66,39 @@ nav{
     flex-direction: column;
     align-items: flex-start;
 }
+#search h2{
+    margin: 10px 0;
+}
 .mobil_on{
     display: none;
 }
 .header:nth-child(1){   
     grid-area: a;
-    margin: 25px 0px;
 }
 
 .header:nth-child(2){
     grid-area: b;
+}
+.search{
     margin: 25px 0px;
 }
 .header:nth-child(3){
     grid-area: c;    
 }
 .nav{
-    color: #0065FC;
+    color: black;
     font-weight: bolder;
+    margin: 5px;
 }
 .nav:hover{
     border-top: 4px solid #0065FC;
+    color: #0065FC;
 }
 nav a{
     padding-top: 80px;
+}
+.recherche{
+    margin: 10px 0;
 }
 .recherche .localisation{
     padding: 18px 20px 22px 20px;
@@ -117,9 +127,6 @@ nav a{
     display: flex;
     justify-content: start;
     flex-direction: column;
-}
-.filtres ul{
-    
 }
 #filtre{
     padding: 16px 16px 16px 0;
@@ -213,6 +220,15 @@ nav a{
     background-color: white;
     width: 100%;
     border-radius: 0 0 20px 20px;
+}
+.description h3{
+    margin: 5px 0;
+}
+.description p{
+    margin: 5px 0;
+}
+.description ul{
+    margin: 5px 0;
 }
 .offre a{
     position: relative;
@@ -357,7 +373,7 @@ footer{
     margin: 50px 0 0 0;
     padding: 20px 0 50px 50px;
     display: grid;
-    grid-template-columns: repeat(3,20%);
+    grid-template-columns: repeat(3,25%);
     background-color: #f2f2f2;
     grid-gap: 50px;
 }
@@ -366,6 +382,9 @@ footer h3{
 }
 footer li{
     padding: 10px 0 0 0;
+}
+footer a{
+    color: black;
 }
 /* ************************responsive tablette******************************* */
 @media screen and (max-width: 768px){
@@ -411,9 +430,6 @@ footer li{
         display: flex;
         flex-flow: row wrap;
         padding: 0 0 0 5px;
-    }
-    .filtres ul{
-        
     }
     #filtre{
         padding: 16px 16px 16px 0;
@@ -506,7 +522,7 @@ footer li{
     /* ***********************hebergement********************************** */
     .section-1{
         display: grid;
-        grid-template-rows: 35% 52%;
+        grid-template-rows: 35% 62%;
         grid-template-columns: 100%;
         grid-template-areas: 
         "populaire"  
@@ -542,7 +558,7 @@ footer li{
     }
     .offre img{
         width: 100%;
-        height: 150px;
+        height: 250px;
         padding: 5px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
@@ -620,8 +636,12 @@ footer li{
     }
     .sub{
         position: absolute;
-        top: 50px;
+        top: 30px;
         right: 20px;
+        color:#0065FC;
+    }
+    .search{
+        margin: 20px;
     }
     .mobil_on{
         display: block;
@@ -636,14 +656,14 @@ footer li{
         padding: 20px 0 20px 0;
     }
     .recherche .localisation{
-        padding: 8px 10px 6px 10px;
+        padding:16px 16px 15px 16px;
         
         border-radius: 25% 0 0 25%;
         background-color: #f2f2f2;
     }
     .recherche input{
-        width: 200px;
-        height: 30px;
+        width: 100%;
+        height: 100%;
         padding: 15px;
         border: 1px solid #f2f2f2;
     }
@@ -651,7 +671,7 @@ footer li{
         
         background-color: #0065FC;
         border-radius: 25%;
-        padding: 8px 10px 4px 10px;
+        padding: 14px;
         margin-left: -5px;
     }
     
@@ -693,12 +713,16 @@ footer li{
         color: black;
         font-weight: bold;
     }
+    .filtres p{
+        margin: 20px;
+    }
     .filtres p i{
         border: 1px solid #DEEBFF;
         padding: 5px 10px 5px 10px;
         border-radius: 25px;
         color: #0065FC;
         margin-right: 12px;
+        float: left;
     }
     /* ***************populaire************** */
     .section-1{
@@ -708,18 +732,16 @@ footer li{
          "populaire"
          "hebergement";
     }
-    .titre{
-        padding: 45px 20px 25px 20px;
-    }
     .populaire{
         width: 375px;
         height: auto;
         display: grid;
         grid-template-rows: 50px 455px;
         grid-gap: 20px;
+        border-radius: 0;
     }
     .titre{
-        padding:0;
+        padding:20px;
     }
     .populair{
         width: 334px;
@@ -752,6 +774,9 @@ footer li{
         border: 0px;
         background-color: white;
     }
+    .hebergement h2{
+        padding:20px 20px;
+    }
     .offres{
         display: grid;
         grid-template-rows: repeat(6,200px);
@@ -767,7 +792,15 @@ footer li{
         width: 100%;
         height: 100%;
     }
+    #afficher_plus{
+        padding: 20px;
+        position: unset;
+        bottom: initial;
+    }
     /* *********************section-2******************** */
+    #activité_marseille{
+        padding: 20px 20px;
+    }
     .section-2{
         display: grid;
         grid-template-rows: repeat(6,190px);
@@ -793,8 +826,9 @@ footer li{
     footer{
         display: grid;
         grid-template-rows: repeat(3,160px);
-        grid-template-columns: 375px;
+        grid-template-columns: 300px;
         padding: 50px 20px 0 20px;
+        grid-gap: 0;
     }
     .footer h3{
         padding: 0 0 10px 0;
